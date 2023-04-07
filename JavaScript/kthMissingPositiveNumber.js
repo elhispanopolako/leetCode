@@ -4,7 +4,7 @@
  * @param {number} k
  * @return {number}
  */
-var findKthPositive = function (arr, k) {
+let findKthPositive = function (arr, k) {
     let res = []
     for (let i = 1; i < 3000; i++) {
         res.push(i)
@@ -18,7 +18,7 @@ var findKthPositive = function (arr, k) {
  * @param {number} k
  * @return {number}
  */
-var findKthPositive = function (arr, k) {
+let findKthPositive = function (arr, k) {
     let missingCount = 0
     let prev = 0
 

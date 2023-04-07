@@ -2,7 +2,7 @@
  * @param {string} digits
  * @return {string[]}
  */
-var letterCombinations = function (digits) {
+let letterCombinations = function (digits) {
     const leters = {
         2: ["a", "b", "c"],
         3: ["d", "e", "f"],
@@ -32,7 +32,7 @@ var letterCombinations = function (digits) {
     return res
 };
 //optimized
-var letterCombinations = function (digits) {
+let letterCombinations = function (digits) {
     const letters = new Map([
         ['2', ['a', 'b', 'c']],
         ['3', ['d', 'e', 'f']],

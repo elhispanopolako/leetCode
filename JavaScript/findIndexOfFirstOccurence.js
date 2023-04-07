@@ -3,6 +3,6 @@
  * @param {string} needle
  * @return {number}
  */
-var strStr = function (haystack, needle) {
+let strStr = function (haystack, needle) {
     return haystack.search(needle)
 };

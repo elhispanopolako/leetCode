@@ -10,7 +10,7 @@
  * @param {TreeNode} root
  * @return {boolean}
  */
-var isSymmetric = function (node, node2) {
+let isSymmetric = function (node, node2) {
     const fn = (node, node2) => {
         if (node2 === undefined) {
             node2 = node.right;
@@ -23,7 +23,7 @@ var isSymmetric = function (node, node2) {
     return fn(node, node2)
 };
 //final
-var isSymmetric = function (node1, node2) {
+let isSymmetric = function (node1, node2) {
     if (node2 === undefined) {
         node2 = node1.right;
         node1 = node1.left;
@@ -45,7 +45,7 @@ var isSymmetric = function (node1, node2) {
  * @param {TreeNode} root
  * @return {boolean}
  */
-var isSymmetric = function (root) {
+let isSymmetric = function (root) {
     if (root == null) return true;
     return isMirror(root.left, root.right);
 };

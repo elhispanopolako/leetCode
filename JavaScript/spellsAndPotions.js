@@ -5,7 +5,7 @@
  * @param {number} success
  * @return {number[]}
  */
-var successfulPairs = function (spells, potions, success) {
+let successfulPairs = function (spells, potions, success) {
     let res = []
     for (let i = 0; i < spells.length; i++) {
         let pairs = 0
@@ -20,7 +20,7 @@ var successfulPairs = function (spells, potions, success) {
 
 };
 //second
-var successfulPairs2 = function (spells, potions, success) {
+let successfulPairs2 = function (spells, potions, success) {
     return spells.map(spell => {
         let pairs = 0;
         for (let i = 0; i < potions.length; i++) {
@@ -33,7 +33,7 @@ var successfulPairs2 = function (spells, potions, success) {
 };
 
 //final
-var successfulPairsFinal = function (spells, potions, success) {
+let successfulPairsFinal = function (spells, potions, success) {
     potions.sort((a, b) => a - b);
     const ans = [];
     for (const spell of spells) {

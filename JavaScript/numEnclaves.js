@@ -2,7 +2,7 @@
  * @param {number[][]} grid
  * @return {number}
  */
-var numEnclaves = function (grid) {
+let numEnclaves = function (grid) {
     let m = grid.length;
     let n = grid[0].length;
 

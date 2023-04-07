@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-var partitionString = function (s) {
+let partitionString = function (s) {
     let count = 1;
     let prevChars = s[0];
 

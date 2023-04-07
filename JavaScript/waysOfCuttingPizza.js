@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number}
  */
-var ways = function (pizza, k) {
+let ways = function (pizza, k) {
     let m = pizza.length, n = pizza[0].length, mod = 10 ** 9 + 7;
     let appleCount = Array(m + 1).fill(0).map(() => Array(n + 1).fill(0));
     let memo = Array(m).fill(0).map(() => Array(n).fill(0).map(() => Array(k + 1).fill(-1)));

@@ -10,8 +10,8 @@
  * @param {ListNode} list2
  * @return {ListNode}
  */
-var mergeTwoLists = function (l1, l2) {
-    var mergedHead = { val: -1, next: null },
+let mergeTwoLists = function (l1, l2) {
+    let mergedHead = { val: -1, next: null },
         crt = mergedHead;
     while (l1 && l2) {
         if (l1.val > l2.val) {

@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var majorityElement = function (nums) {
+let majorityElement = function (nums) {
     let res = []
     let sort = nums.sort((a, b) => a - b)
     let major = 0
@@ -24,7 +24,7 @@ var majorityElement = function (nums) {
  * @param {number[]} nums
  * @return {number}
  */
-var majorityElement = function (nums) {
+let majorityElement = function (nums) {
     let res = []
     let major = 0
     sort.forEach(num => {
@@ -39,12 +39,12 @@ var majorityElement = function (nums) {
 };
 //Other approachs
 
-var majorityElement = function (nums) {
+let majorityElement = function (nums) {
     let sort = nums.sort((a, b) => a - b)
     return sort[Math.floor(sort.length / 2)]
 };
 //
-var majorityElement = function (nums) {
+let majorityElement = function (nums) {
     let count = 0;
     let candidate = null;
 

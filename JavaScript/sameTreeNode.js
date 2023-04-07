@@ -12,7 +12,7 @@
  * @param {TreeNode} q
  * @return {boolean}
  */
-var isSameTree = function (p, q) {
+let isSameTree = function (p, q) {
     if (p == null || q === null) {
         if (p == q) {
             return true
@@ -32,6 +32,6 @@ var isSameTree = function (p, q) {
     return fn(p, q)
 };
 //other
-var isSameTree = function (p, q) {
+let isSameTree = function (p, q) {
     return JSON.stringify(p) === JSON.stringify(q)
 };

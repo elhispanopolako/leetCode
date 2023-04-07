@@ -2,7 +2,7 @@
  * @param {number} num
  * @return {string}
  */
-var intToRoman = function (num) {
+let intToRoman = function (num) {
     const sym = {
         1: 'I',
         2: 'II',
@@ -35,9 +35,9 @@ var intToRoman = function (num) {
         2000: 'MM',
         3000: 'MMM'
     }
-    var nums = num.toString().split('');
-    var len = nums.length;
-    var answer = nums.map((n, i) => {
+    let nums = num.toString().split('');
+    let len = nums.length;
+    let answer = nums.map((n, i) => {
         return n + (Array(len - i - 1).fill(0)).join('');
     });
     let x = answer.map(Number).filter(function (n) { return n !== 0; });

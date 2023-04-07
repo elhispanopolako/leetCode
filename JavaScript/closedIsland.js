@@ -2,7 +2,7 @@
  * @param {number[][]} grid
  * @return {number}
  */
-var closedIsland = function (grid) {
+let closedIsland = function (grid) {
     let m = grid.length;
     let n = grid[0].length;
 

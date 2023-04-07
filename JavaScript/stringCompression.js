@@ -3,7 +3,7 @@
  * @param {character[]} chars
  * @return {number}
  */
-var compress = function (chars) {
+let compress = function (chars) {
     let res = []
     let actual = chars[0]
     let count = 0

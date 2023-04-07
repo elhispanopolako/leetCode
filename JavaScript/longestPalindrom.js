@@ -3,7 +3,7 @@
  * @param {string} s
  * @return {string}
  */
-var longestPalindrome = function (s) {
+let longestPalindrome = function (s) {
     if (s.length <= 1) {
         return s;
     }
@@ -27,7 +27,7 @@ var longestPalindrome = function (s) {
     return result
 };
 //Optimize
-var longestPalindrome = function (s) {
+let longestPalindrome = function (s) {
     if (s.length <= 1) {
         return s;
     }
@@ -45,7 +45,7 @@ var longestPalindrome = function (s) {
     return result;
 };
 //Optimize more
-var longestPalindrome = function (s) {
+let longestPalindrome = function (s) {
     if (s.length <= 1) {
         return s;
     }
@@ -63,7 +63,7 @@ var longestPalindrome = function (s) {
     return s.substring(start, end + 1);
 };
 
-var expandAroundCenter = function (s, left, right) {
+let expandAroundCenter = function (s, left, right) {
     while (left >= 0 && right < s.length && s.charAt(left) === s.charAt(right)) {
         left--;
         right++;

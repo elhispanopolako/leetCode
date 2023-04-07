@@ -3,7 +3,7 @@
  * @return {number}
  */
 //first
-var myAtoi = function (s) {
+let myAtoi = function (s) {
     const len = s.length;
     let result = 0;
     let sign = 1;
@@ -24,7 +24,7 @@ var myAtoi = function (s) {
     return sign === -1 ? Math.max(-(2 ** 31), -result) : Math.min(2 ** 31 - 1, result);
 };
 //other
-var myAtoi = function (s) {
+let myAtoi = function (s) {
     const regex = /^([\s]+)?[-+]?[0-9]+/;
 
     return s.match(regex)

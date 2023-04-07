@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var zeroFilledSubarray = function (nums) {
+let zeroFilledSubarray = function (nums) {
     let oneZero = nums.filter(x => x == 0)
     if (oneZero.length == 0) {
         return 0
@@ -24,7 +24,7 @@ var zeroFilledSubarray = function (nums) {
     return oneZero.length + twoZeros + threeZeros + fourZeros
 };
 //Simple solution
-var zeroFilledSubarray = function (nums) {
+let zeroFilledSubarray = function (nums) {
     let counter = 0
     let res = nums.reduce((p, num) =>
         p + (counter = num === 0 ? counter + 1 : 0), 0

@@ -3,8 +3,8 @@
  * @param {string} s2
  * @return {boolean}
  */
-var isScramble = function (s1, s2) {
-    var helper = function (s1, s2, dp) {
+let isScramble = function (s1, s2) {
+    let helper = function (s1, s2, dp) {
         if (dp[s1 + s2] != undefined || dp[s2 + s1] != undefined) return dp[s1 + s2];
         else if (s1 == s2) return true
         else if (s1.length != s2.length) return false

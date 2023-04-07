@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {string[]}
  */
-var generateParenthesis = function (n) {
+let generateParenthesis = function (n) {
     let res = []
     let iterate = (str, open, close) => {
         if (open > n || close > n || close > open) return;

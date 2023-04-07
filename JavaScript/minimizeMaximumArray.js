@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var minimizeArrayValue = function (nums) {
+let minimizeArrayValue = function (nums) {
     let sum = 0
     let res = 0
     for (let i = 0; i < nums.length; i++) {

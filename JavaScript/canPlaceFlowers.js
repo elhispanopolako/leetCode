@@ -3,13 +3,13 @@
  * @param {number} n
  * @return {boolean}
  */
-var canPlaceFlowers = function (flowerbed, n) {
+let canPlaceFlowers = function (flowerbed, n) {
     let ones = flowerbed.filter(f => f == 1)
     let zeros = flowerbed.filter(f => f == 0)
     return zeros.length - ones.length == n
 };
 //ultimate solution
-var canPlaceFlowers = function (flowerbed, n) {
+let canPlaceFlowers = function (flowerbed, n) {
     for (let i = 0; i < flowerbed.length; i++) {
         if (flowerbed[i] === 1) continue;
 

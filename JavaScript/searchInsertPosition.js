@@ -4,7 +4,7 @@
  * @param {number} target
  * @return {number}
  */
-var searchInsert = function (nums, target) {
+let searchInsert = function (nums, target) {
     let first = nums.indexOf(target)
     if (first != -1) {
         return first
@@ -18,7 +18,7 @@ var searchInsert = function (nums, target) {
     }
 };
 //other
-var searchInsert = function (nums, target) {
+let searchInsert = function (nums, target) {
     for (let i = 0; i < nums.length; i++) {
         if (nums[i] >= target) return i;
     }

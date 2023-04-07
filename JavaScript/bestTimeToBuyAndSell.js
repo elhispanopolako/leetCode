@@ -3,7 +3,7 @@
  * @param {number[]} prices
  * @return {number}
  */
-var maxProfit = function (prices) {
+let maxProfit = function (prices) {
     let results = []
     for (let i = 0; i < prices.length; i++) {
         const restArr = prices.slice(i)
@@ -13,7 +13,7 @@ var maxProfit = function (prices) {
     return Math.max(...results)
 };
 //Optimized
-var maxProfit = function (prices) {
+let maxProfit = function (prices) {
     let maxProfit = 0;
     let minPrice = prices[0];
 

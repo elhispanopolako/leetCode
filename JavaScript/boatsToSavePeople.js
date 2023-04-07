@@ -4,7 +4,7 @@
  * @param {number} limit
  * @return {number}
  */
-var numRescueBoats = function (people, limit) {
+let numRescueBoats = function (people, limit) {
     let sorted = people.sort((a, b) => b - a)
     let boats = 0
     for (let i = 0; i < sorted.length; i++) {
@@ -22,7 +22,7 @@ var numRescueBoats = function (people, limit) {
     return boats
 };
 //final
-var numRescueBoats = function (people, limit) {
+let numRescueBoats = function (people, limit) {
     let boats = 0
     let i = 0
     let n = people.length

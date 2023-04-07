@@ -3,7 +3,7 @@
  * @return {number}
  */
 //mine
-var romanToInt = function (s) {
+let romanToInt = function (s) {
     let result = 0
     let arr = s.split('')
     let numberM = arr.filter((n, idx) => n == 'M' && arr[idx - 1] !== 'C')
@@ -62,7 +62,7 @@ var romanToInt = function (s) {
 
 };
 //refactored
-var romanToInt = function (s) {
+let romanToInt = function (s) {
     const sym = {
         'I': 1,
         'V': 5,

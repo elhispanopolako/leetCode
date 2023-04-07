@@ -10,7 +10,7 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
-var inorderTraversal = function (root) {
+let inorderTraversal = function (root) {
     let res = [];
 
     const fn = (node) => {

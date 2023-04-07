@@ -3,7 +3,7 @@
  * @param {string} s
  * @return {boolean}
  */
-var isValid = function (s) {
+let isValid = function (s) {
     if (!s.length || (s.length % 2) == 1) return false
     let result = []
     for (let i = 0; i < s.length; i++) {
@@ -20,7 +20,7 @@ var isValid = function (s) {
     return !result.length
 };
 //other option
-var isValid = function (s) {
+let isValid = function (s) {
     const stack = [];
 
     for (let i = 0; i < s.length; i++) {
@@ -42,7 +42,7 @@ var isValid = function (s) {
     return stack.length === 0;
 };
 //third
-var isValid = function (s) {
+let isValid = function (s) {
     let stack = [];
     const map = {
         ')': '(',

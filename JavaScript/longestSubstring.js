@@ -3,7 +3,7 @@
  * @param {string} s
  * @return {number}
  */
-var lengthOfLongestSubstring = function (s) {
+let lengthOfLongestSubstring = function (s) {
     if (s == "") { return 0 }
     let arr = s.split('')
     let set = new Set(arr);
@@ -21,7 +21,7 @@ var lengthOfLongestSubstring = function (s) {
     return Math.max(...maxLength)
 };
 //finish
-var lengthOfLongestSubstring = function (s) {
+let lengthOfLongestSubstring = function (s) {
     if (s.length === 0 && s.length === 1) return s.length;
     let set = new Set();
     let left = 0;
