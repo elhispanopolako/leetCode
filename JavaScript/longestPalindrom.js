@@ -27,7 +27,7 @@ let longestPalindrome = function (s) {
     return result
 };
 //Optimize
-let longestPalindrome = function (s) {
+let longestPalindrome2 = function (s) {
     if (s.length <= 1) {
         return s;
     }
@@ -45,7 +45,7 @@ let longestPalindrome = function (s) {
     return result;
 };
 //Optimize more
-let longestPalindrome = function (s) {
+let longestPalindrome3 = function (s) {
     if (s.length <= 1) {
         return s;
     }
